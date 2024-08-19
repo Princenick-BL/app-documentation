@@ -1,0 +1,176 @@
+.aside{
+    padding: 1rem;
+    height: 100% ;
+    padding-right: 0;
+    .searchBox{
+        cursor: pointer;
+        border: 1px solid #c5c5d2;
+        overflow: hidden;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex: 1 1;
+        font-size: 14px;
+        font-weight: 500;
+        height: 36px;
+        justify-content: space-between;
+        margin: 0;
+        max-width: 200px;
+        padding: 0 8px;
+        transition: opacity;
+        -webkit-user-select: none;
+        user-select: none;
+        width: 200px;
+        color: #969faf;
+        div{
+            display: flex;
+            align-items: center;
+        }
+        .ctrl{
+            span{
+                align-items: center;
+                background: #ececf1;
+                border: 0;
+                border-radius: 3px;
+                box-shadow: none;
+                color: #6e6e80;
+                display: flex;
+                font-size: 12px;
+                height: 18px;
+                justify-content: center;
+                line-height: 18px;
+                margin: 0;
+                margin-right: 0px;
+                padding: 0;
+                position: relative;
+                top: 0;
+                width: 20px;
+                margin-left: 5px;
+            }
+        }
+        
+    }
+    .documentations{
+        display: flex;
+        flex-direction: column;
+        height: calc(calc(100vh - 80px) - 2rem);
+        padding-right: 1rem;
+        overflow-y: auto;
+        .documentation{
+            display: flex;
+            flex-direction: column;
+            h3,.section{
+                border-radius: 8px;
+                display: block;
+                font-size: 14px;
+                line-height: 20px;
+                padding: 6px 12px;
+                text-decoration: none;
+            }
+            h3{
+                margin-top: 2.5rem;
+                color: #000;
+                text-transform: uppercase;
+            }
+            .section:hover{
+                background-color: #f3f3f3;
+            }
+            .sectionActive{
+                color: var(--green);
+                background-color: var(--green-opacity);
+                font-weight: bold;
+            }
+            .sectionActive:hover{
+                background-color: var(--green-opacity);
+            }
+        }
+    }
+}
+.layoutAside{
+    display: flex;
+    align-items: center;
+    .openCloseBox{
+        height: 100%;
+        width: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .openCloseContainer{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid var(--border-color);
+            cursor: pointer;
+            .openCloseBtn{
+
+                .btnBar:first-of-type{
+                    transform: translateY(2px);
+                }
+                .btnBar:last-of-type{
+                    transform: translateY(-2px);
+                }
+            }
+
+            .openCloseBtnClosed{
+                .btnBar:first-of-type{
+                    transform: translateY(2px) rotate(10deg);
+                }
+                .btnBar:last-of-type{
+                    transform: translateY(-2px) rotate(-10deg);
+                }
+            }
+            .btnBar{
+                background-color: var(--border-color);
+                width: 4px;
+                height: 15px;
+                border-radius: 5px;
+            }
+            .btnBarClosed{
+                display: none;
+            }
+           
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .layoutAside{
+        position: fixed;
+        background-color: #fff;
+    }
+}
+.layoutAsideClosed{
+    position: fixed;
+    top: 55px;
+    left: .5rem;
+    height: 30px;
+    width: auto;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    .openCloseBox{
+        width: 100%;
+    }
+    
+    .openCloseContainer{
+        border-radius: 5px;
+        color: #fff !important;
+        padding: 0;
+        border: none !important;
+        .btnBar{
+            display: none;
+        }
+        .btnBarClosed{
+            width: 20px;
+            display: flex !important;
+        }
+        
+      
+    }
+    .aside{
+        display: none;
+    }
+}

@@ -1,0 +1,125 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    color: #2d333a !important;
+    .header,.content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        height: 60px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .content{
+        height: calc(100% - 64px);
+        .children{
+            height: 100%;
+            width: 100%;
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                color: #2d333a !important;
+                width: 100%;
+                margin-top: 2rem;
+                max-width: 350px;
+                h1{
+                    color: #2d333a !important;
+                    text-align: center;
+                    width: 100%;
+                }
+                input[type="text"],input[type="password"],button{
+                    height: 50px;
+                    padding: 1rem;
+                    font-size: 1.1rem;
+                    border: 1px solid var(--border-color);
+                    border-radius: 5px;
+                    margin-bottom: 2rem;
+                }
+                button{
+                    color: #fff;
+                    background-color: var(--green);
+                    font-weight: bold;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                svg{
+                    shape-rendering: auto;
+                    width: 40px;
+                }
+                .or{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    text-transform: uppercase;
+                    border: none;
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin: 0;
+                    padding: 24px 0 0;
+                    span{
+                        text-align: center;
+                        flex: 0.2 0 auto;
+                        margin: 0;
+                    }
+                }
+                .or::before{
+                    content: "";
+                    border-bottom: 1px solid #c2c8d0;
+                    border-bottom: 1px solid var(--border-color);
+                    flex: 1 0 auto;
+                    height: .5em;
+                    margin: 0;
+                }
+                .or::after{
+                    content: "";
+                    border-bottom: 1px solid var(--border-color);
+                    flex: 1 0 auto;
+                    height: .5em;
+                    margin: 0;
+                }
+            }
+            .authStatus{
+                border: 1px solid var(--border-color);
+                height: 200px;
+                padding: 2rem;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                width: 100%;
+                border-top-width: 4px;
+                h1{
+                    color: #2d333a !important;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    margin: 0;
+                }
+            }
+            .btnAction{
+                margin-top: 2rem;
+                width: 100%;
+                button{
+                    width: 100%;
+                    background-color: var(--green);
+                    color: #fff;
+                    font-weight: bold;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,135 @@
+.header {
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    min-width: inherit;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+
+    .headerLeft {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            color: var(--green);
+            fill: var(--green);
+            display: block;
+            min-width: 100px;
+            max-height: 40px;
+            margin-right: 32px;
+            padding-left: 40px;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100% !important;
+                max-height: 40px;
+            }
+        }
+
+        .headerLeftMenu {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            li {
+                list-style-type: none;
+                height: 100%;
+                a{
+                    text-decoration: none;
+                }
+                .menuItem {
+                    padding: 0 16px;
+                    min-width: auto;
+                    height: 100%;
+                    cursor: pointer;
+                    .menuItemTitle{
+                        height: calc(100% - 4px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 4px;
+                    }
+                    .menuItemIsCurrent{
+                        height: 4px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+                }
+                .menuActive{
+                    .menuItemIsCurrent{
+                        background-color: var(--green);
+                    }
+                }
+            }
+        }
+    }
+
+    .headerRight{
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        .searchBox {
+            float: right;
+            cursor: pointer;
+            border: 1px solid #c5c5d2;
+            overflow: hidden;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex: 1 1;
+            font-size: 14px;
+            font-weight: 500;
+            height: 36px;
+            justify-content: space-between;
+            margin: 0;
+            max-width: 200px;
+            padding: 0 8px;
+            transition: opacity;
+            -webkit-user-select: none;
+            user-select: none;
+            width: 200px;
+            color: #969faf;
+            margin-right: 1rem;
+            min-width: 200px;
+            div {
+                display: flex;
+                align-items: center;
+            }
+        
+            .ctrl {
+                span {
+                    align-items: center;
+                    background: #ececf1;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: none;
+                    color: #6e6e80;
+                    display: flex;
+                    font-size: 12px;
+                    height: 18px;
+                    justify-content: center;
+                    line-height: 18px;
+                    margin: 0;
+                    margin-right: 0px;
+                    padding: 0;
+                    position: relative;
+                    top: 0;
+                    width: 20px;
+                    margin-left: 5px;
+                }
+            }
+        
+        }
+        
+    }
+}
+
+.scroll{
+    box-shadow: rgba(65,69,73,.25) 0 1px 10px 0;
+}

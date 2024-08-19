@@ -1,0 +1,117 @@
+.profile{
+    
+    width: calc(100% - 2rem );
+    bottom: .5rem;
+    .connectionCta{
+        display: flex;
+        align-items: center;
+        .btn{
+            margin: 0 10px;
+        }
+    }
+    .profileBoxMain{
+        background-color: rgb(36, 38, 37);
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+        padding: 5px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        color: #fff;
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    .tokenIndicator{
+        margin-bottom: 10px;
+    }
+    .profileBoxMain:hover{
+        background-color: rgba(0, 0, 0, 0.62);
+        color: #fff;
+    }
+    .profileName{        
+       width: 100%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem;
+    }
+    .otherOptions{
+        position: absolute;
+        right: 1rem;
+        top: 110%;
+        min-width: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.62);
+        padding: 5px 10px;
+        background-color: #fff;
+        font-size: 1.05rem;
+        border-radius: 5px;
+        max-width: 100%;
+        .otherOption{
+            width: max-content;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-width: fit-content;
+            border-radius: 20px;
+            padding: 5px;
+            margin-bottom: 5px ;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: .9rem;
+            margin-top: 10px;
+            svg{
+                margin-right: 5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .profileBox{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            .profileIcon{
+                width: 28px;
+                height: 28px;
+                min-width: 28px;
+                border-radius: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: green;
+                color: #fff;
+                font-weight: bold;
+            }
+            .profileDetails{
+                padding-left: 5px;
+                .profileNameFull{
+                    width: 100%;
+                    font-size: 1rem;
+
+                }
+            }
+        }
+        .profileLevel{
+            font-size: .8rem;
+            font-style: italic;
+        }
+       
+        .otherOption:nth-child(2):hover{
+            background-color: var(--grey) ;
+            color: #fff;
+        }
+        .otherOption:last-of-type:hover{
+            background-color: red;
+            color: #fff;
+        }
+       
+    }
+}
+
