@@ -1,6 +1,5 @@
 import { ReactNode } from "react"
 import { privateRequest } from "./utils";
-import { createSttJobFetch } from "./text-extractor";
 
 export interface ModelResult {
     type? : string,
